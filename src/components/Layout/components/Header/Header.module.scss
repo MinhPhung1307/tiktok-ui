@@ -11,6 +11,7 @@
     justify-content: center;
 }
 .container {
+    position: relative;
     height: 100%;
     width: var(--layout-width);
     display: flex;
@@ -97,4 +98,10 @@
     &:active {
         background-color: rgba(22, 24, 35, 0.06);
     }
+}
+
+.actions {
+    position: absolute;
+    flex: 1;
+    right: 0;
 }

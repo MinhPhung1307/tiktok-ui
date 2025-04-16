@@ -2,6 +2,7 @@ import images from '~/assets/images';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 import styles from './Header.module.scss';
 import classNames from 'classnames/bind';
+import Button from '~/components/Button';
 
 import Tippy from '@tippyjs/react/headless';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -52,7 +53,10 @@ function Header() {
                         </button>
                     </div>
                 </Tippy>
-                <div className={cx('actions')}></div>
+                <div className={cx('actions')}>
+                    <Button text>Upload</Button>
+                    <Button primary>Log in</Button>
+                </div>
             </div>
         </header>
     );
