@@ -103,6 +103,7 @@
 .actions {
     display: flex;
     position: absolute;
+    height: 32px;
     flex: 1;
     right: 0;
 }
@@ -112,5 +113,22 @@
     margin-left: 28px;
     padding: 4px 8px;
     background-color: transparent;
+    cursor: pointer;
+}
+
+.action-btn {
+    background-color: transparent;
+    font-size: 2.2rem;
+    color: #161823;
+    padding: 4px 12px;
+    cursor: pointer;
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    margin-left: 12px;
+    border-radius: 50%;
+    object-fit: cover;
     cursor: pointer;
 }
