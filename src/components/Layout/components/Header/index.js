@@ -1,8 +1,3 @@
-import images from '~/assets/images';
-import styles from './Header.module.scss';
-import classNames from 'classnames/bind';
-import Button from '~/components/Button';
-
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -16,11 +11,17 @@ import {
     faSignOut,
     faUser,
 } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
+
+import styles from './Header.module.scss';
+import classNames from 'classnames/bind';
+import images from '~/assets/images';
+import Button from '~/components/Button';
 import Menu from '~/components/Popper/Menu';
 import { InboxIcon, MessageIcon, UploadIcon } from '~/components/Icons';
 import Image from '~/components/Image';
 import Search from '../Search';
-import { Link } from 'react-router-dom';
+import routesConfig from '~/config/routes';
 
 const cx = classNames.bind(styles);
 
@@ -89,7 +90,7 @@ function Header() {
     return (
         <header className={cx('wrapper')}>
             <div className={cx('container')}>
-                <Link to={'/'} className={cx('logo')}>
+                <Link to={routesConfig.home} className={cx('logo')}>
                     <img src={images.logo} alt="tiktok" />
                 </Link>
 
