@@ -5,9 +5,11 @@
 }
 .body {
     display: flex;
+    max-width: 100%;
     width: var(--layout-width);
     margin-top: var(--header-height);
 }
 .content {
     flex: 1;
+    margin-left: 20px;
 }
